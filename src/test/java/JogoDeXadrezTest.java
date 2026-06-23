@@ -7,23 +7,24 @@ public class JogoDeXadrezTest {
 
     @Test
     void verificarPecas() {
-        Bispo bispo = new Bispo();
-        assertEquals(1,  bispo.mover());
 
-        Cavalo cavalo = new Cavalo();
-        assertEquals(1,  cavalo.mover());
+        Bispo bispo = new Bispo("B1b");
+        assertEquals(1, bispo.mover());
 
-        Peao peao = new Peao();
-        assertEquals(1,  peao.mover());
+        Cavalo cavalo = new Cavalo("H1b");
+        assertEquals(1, cavalo.mover());
 
-        Rainha rainha = new Rainha();
-        assertEquals(1,  rainha.mover());
+        Peao peao = new Peao("P1b");
+        assertEquals(1, peao.mover());
 
-        Rei rei = new Rei();
-        assertEquals(1,  rei.mover());
+        Rainha rainha = new Rainha("Q0b");
+        assertEquals(1, rainha.mover());
 
-        Torre torre = new Torre();
-        assertEquals(1,  torre.mover());
+        Rei rei = new Rei("K0b");
+        assertEquals(1, rei.mover());
+
+        Torre torre = new Torre("T1b");
+        assertEquals(1, torre.mover());
     }
 
     @Test
